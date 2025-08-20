@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css" />
+    <title>Tables example</title>
+</head>
+<body>
+    <h2 id="tableHeading">Weekly Course Schedule</h2>
+    <div class="table-wrapper">
+        <table aria-labelledby="tableHeading" aria-label="Weekly Course Schedule">
+            <caption>Fig 1: Schedules for Semester 4 courses.</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col" id="course">Course</th>
+                    <th scope="col" id="monday">Monday</th>
+                    <th scope="col" id="tuesday">Tuesday</th>
+                    <th scope="colgroup" colspan="2" id="wedThur">Wednesday & Thursday</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th id="math" scope="row" headers="course">Math</th>
+                    <td theaders="monday math">10:00 - 11:00</td>
+                    <td theaders="tuesday math">12:00 - 13:00</td>
+                    <td theaders="wedThur math">10:00 - 11:00</td>
+                    <td theaders="wedThur math">12:00 - 13:00</td>
+                </tr>
+                <tr>
+                    <th id="biology" scope="row" headers="course">Biology</th>
+                    <td theaders="monday biology">11:00 - 12:00</td>
+                    <td theaders="tuesday biology"> 16:00 - 17:00</td>
+                    <td theaders="wedThur biology">11:00 - 12:00</td>
+                    <td theaders="wedThur biology">16:00 - 17:00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th id="capstone" scope="row" headers="course">Capstone</th>
+                    <td theaders="monday capstone">-</td>
+                    <td theaders="tuesday capstone">-</td>
+                    <td theaders="wedThur capstone">-</td>
+                    <td theaders="wedThur capstone">-</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

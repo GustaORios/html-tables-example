@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <title>Home - Nav Example</title>
+</head>
+
+<body>
+    <header aria-label="Header Information">
+        <nav aria-label="Navigation ELement">
+            <a href="./index.html" class="logo"><img src="./assets/imgs/hifive.png" alt="logo"></a>
+            <span></span>
+            <ul>
+                <li><a href="#" class="navlink" id="current_page">Schedule</a></li>
+                <li><a href="./pages/productCompar.html" class="navlink">Product Comp</a></li>
+                <li><a href="./pages/pet.html" class="navlink">Pet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main aria-label="Main Information">
+        <div class="homepage-content">
+            <h2 id="tableHeading" style="text-align: center;">Semester II Schedule</h1>
+
+                <table aria-label="tableHeading" aria-labelledby="Semester II Schedule">
+                    <caption>Fig: Semester 2 Course Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" id="course">Course</th>
+                            <th scope="colgroup" id="Time" colspan="2">Time</th>
+                            <th scope="col" id="room">Room</th>
+                            <th scope="col" id="day">Day</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th id="english" scope="row" rowspan="2" class="title-row">English II</td>
+                            <td theaders="time english">09:00</td>
+                            <td theaders="time english">10:30</td>
+                            <td theaders="room english">L2201</td>
+                            <td theaders="day english">Monday</td>
+                        </tr>
+                        <tr>
+                            <td theaders="time english">13:00</td>
+                            <td theaders="time english">14:30</td>
+                            <td theaders="room english">L2201</td>
+                            <td theaders="day english">Wednesday</td>
+                        </tr>
+                        <tr>
+                            <th id="geography" scope="row" class="title-row">Geography</td>
+                            <td theaders="time geography">11:00</td>
+                            <td theaders="time geography">12:30</td>
+                            <td theaders="room geography">G107</td>
+                            <td theaders="day geography">Tuesday</td>
+                        </tr>
+                        <tr>
+                            <th id="biology" scope="row" class="title-row">Biology</td>
+                            <td theaders="time biology">08:30</td>
+                            <td theaders="time biology">10:00</td>
+                            <td theaders="room biology">B302</td>
+                            <td theaders="day biology">Friday</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+        </div>
+    </main>
+
+    <footer aria-label="Footer Information">
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li id="footerLink"><a class="navlink" href="#">FAQ</a></li>
+                <li id="footerLink"><a class="navlink" href="#">Terms</a></li>
+                <li id="footerLink"><a class="navlink" href="#">Privacy</a></li>
+                <li id="footerLink"><a class="navlink" href="#">Cookies</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <p>&copy; <time datetime="2025-01-01">2025</time> Gustavo. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

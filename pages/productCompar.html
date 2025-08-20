@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Product Comparison Chart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/styles/productCompar.css" />
+</head>
+
+<body>
+
+  <header aria-label="Header Information">
+    <nav aria-label="Navigation ELement">
+      <a href="./index.html" class="logo"><img src="../assets/imgs/hifive.png" alt="logo"></a>
+      <span></span>
+      <ul>
+        <li><a href="../index.html" class="navlink" id="current_page">Schedule</a></li>
+        <li><a href="#" id="current_page">Product Comp</a></li>
+        <li><a href="./pet.html" class="navlink">Pet</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main aria-label="Main Information">
+    <div class="homepage-content">
+      <h3 id="tableHeading" style="text-align: center;">Product Comparison Chart</h3>
+
+      <table>
+        <thead>
+        <caption>Fig: Comparison of the features between the products</caption>
+        <tr>
+          <th></th>
+          <th scope="col" class="column-header" id="productA">Product A</th>
+          <th scope="col" class="column-header" id="productB">Product B</th>
+          <th scope="col" class="column-header" id="productC">Product C</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td scope="row" class="title-row">Durability</td>
+          <td theaders="durability productA">10/10</td>
+          <td theaders="durability productB">5/10</td>
+          <td theaders="durability productC">7/10</td>
+        </tr>
+        <tr>
+          <td scope="row" class="title-row">Design</td>
+          <td theaders="design productA">3/10</td>
+          <td theaders="design productB">8/10</td>
+          <td theaders="design productC">7/10</td>
+        </tr>
+        <tr>
+          <td scope="row" class="title-row">Usability</td>
+          <td theaders="usability productA">7/10</td>
+          <td theaders="usability productB">10/10</td>
+          <td theaders="usability productC">5/10</td>
+        </tr>
+        <tr>
+          <td scope="row" class="title-row">Price</td>
+          <td theaders="price productA">9/10</td>
+          <td theaders="price productB">7/10</td>
+          <td theaders="price productC">3/10</td>
+        </tr>
+        </tbody>
+
+        <tfoot></tfoot>
+      </table>
+
+    </div>
+
+  </main>
+
+  <footer aria-label="Footer Information">
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li id="footerLink"><a class="navlink" href="#">FAQ</a></li>
+        <li id="footerLink"><a class="navlink" href="#">Terms</a></li>
+        <li id="footerLink"><a class="navlink" href="#">Privacy</a></li>
+        <li id="footerLink"><a class="navlink" href="#">Cookies</a></li>
+      </ul>
+    </nav>
+    <hr>
+    <p>&copy; <time datetime="2025-01-01">2025</time> Gustavo. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
